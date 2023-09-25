@@ -1,0 +1,176 @@
+@media (max-width: 1200px) {
+  .w1200 {
+    width: 96%;
+  }
+  .header-desc p:nth-of-type(1) {
+    font-size: 80px;
+  }
+  .header-desc p:nth-of-type(2) {
+    font-size: 30px;
+  }
+  .logo {
+    width: 160px;
+  }
+  .menu a,
+  .about-us-title {
+    font-size: 26px;
+  }
+  .imgs-box {
+    margin: 6% 0;
+  }
+  .preface p,
+  .teach-image,
+  .interact-box {
+    margin: 6% 0 0;
+  }
+  .title {
+    padding: 7% 0 5.5%;
+    font-size: 36px;
+  }
+  .preface p,
+  .interact-pre {
+    font-size: 22px;
+  }
+  .interact-desc,
+  .artworks-desc p {
+    padding-top: 5.5%;
+  }
+  .artworks-desc p:nth-of-type(2),
+  .interact-desc p,
+  .about-us-info p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 968px) {
+  .header-desc p:nth-of-type(1) {
+    font-size: 60px;
+  }
+  .header-desc p:nth-of-type(2) {
+    font-size: 24px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .w896 {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header-desc p:nth-of-type(1) {
+    font-size: 50px;
+  }
+  .header-desc p:nth-of-type(2),
+  .teach-song .item p,
+  .topHeader.fixed .header-desc p:nth-of-type(2),
+  .topHeader.fixed nav a {
+    font-size: 16px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .menu a {
+    font-size: 20px;
+  }
+  .imgs-box {
+    flex-wrap: wrap;
+  }
+  .imgs-box .image {
+    flex: 0 0 33.3%;
+    height: 220px;
+  }
+  .preface p {
+    margin-top: 0;
+  }
+  .preface p,
+  .interact-pre,
+  .artworks-desc p:nth-of-type(2),
+  .interact-desc p,
+  .about-us-info p,
+  .song button {
+    font-size: 18px;
+  }
+  .teach-image {
+    height: 498px;
+  }
+  .artworks-desc p:nth-of-type(1) {
+    font-size: 24px;
+  }
+  #cup {
+    width: 400px;
+    height: 400px;
+  }
+  .bar {
+    height: 366px;
+  }
+  .bar .item span {
+    font-size: 12px;
+  }
+  .make-song img:nth-of-type(1),
+  .make-song img:nth-of-type(3) {
+    width: 32px;
+  }
+  .modal {
+    width: 92%;
+  }
+}
+@media (max-width: 574px) {
+  .menu li {
+    margin-right: 0;
+  }
+  .logo {
+    width: 60px;
+  }
+  .header-desc p:nth-of-type(1) {
+    font-size: 40px;
+  }
+  .header-desc p:nth-of-type(2),
+  .teach-song .item p,
+  .topHeader.fixed .header-desc p:nth-of-type(2),
+  .topHeader.fixed nav a {
+    font-size: 14px;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+  .teach-image {
+    height: 373px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .preface p,
+  .interact-pre,
+  .artworks-desc p:nth-of-type(2),
+  .interact-desc p,
+  .about-us-info p,
+  .song button {
+    font-size: 16px;
+  }
+  .teach-song .item {
+    flex: 0 0 20%;
+  }
+  .about-us-info {
+    flex-direction: column;
+  }
+  .name,
+  .email,
+  .about-us-info .contact {
+    margin-bottom: 1%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .about-us-info p {
+    margin-top: 10px;
+  }
+  #cup {
+    width: 300px;
+    height: 300px;
+  }
+  .bar {
+    height: 266px;
+  }
+  .song .w1200 {
+    flex-wrap: wrap;
+  }
+}
