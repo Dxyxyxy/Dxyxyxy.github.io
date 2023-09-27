@@ -1,0 +1,454 @@
+/* clear style start */
+body {
+  overflow-x: hidden;
+  min-width: 375px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+/* clear style end */
+/* common style start */
+@font-face {
+  font-family: 'maldives';
+  src: url('../fonts/maldives-51qp8.ttf');
+}
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.w896 {
+  width: 896px;
+  margin: 0 auto;
+}
+#fullPage {
+  color: #fff;
+}
+/* common style end */
+/* stars style start */
+.stars,
+.twinkl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stars {
+  background: #000 url(../images/stars.png) repeat top center;
+  z-index: 0;
+}
+.twinkl {
+  background: transparent url(../images/twinkling.png) repeat top center;
+  z-index: 0;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+/* stars style end */
+/* loading style start */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-text {
+  font-size: 100px;
+  color: #fff;
+  font-family: 'maldives';
+}
+/* loading style end */
+/* header style start */
+section {
+  position: relative;
+  z-index: 2;
+}
+.top {
+  padding: 3% 0;
+}
+header {
+  border-bottom: 4px solid #fff7a6;
+}
+header .w1200 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  width: 100%;
+}
+.header-desc {
+  text-align: center;
+}
+.header-desc p:nth-of-type(1) {
+  font-family: 'maldives';
+  font-size: 120px;
+  color: #a9ecfd;
+  font-weight: bold;
+}
+.header-desc p:nth-of-type(2) {
+  font-size: 40px;
+  color: #fff7a6;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  height: 60px;
+}
+.menu a {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  line-height: 60px;
+  height: 60px !important;
+  padding: 0 12px;
+  overflow: hidden;
+}
+.menu a span {
+  display: inline-block;
+}
+/* nav a:hover {
+  background-color: #fff7a6;
+  color: #000;
+} */
+.topHeader.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #000;
+}
+.topHeader.fixed .top {
+  padding: 0;
+}
+.topHeader.fixed .header-desc p:nth-of-type(1) {
+  font-size: 40px;
+}
+.topHeader.fixed .header-desc p:nth-of-type(2),
+.topHeader.fixed nav a {
+  font-size: 22px;
+}
+.topHeader.fixed .logo {
+  width: 100px;
+}
+/* header style end */
+.preface p {
+  margin-top: 100px;
+  font-size: 26px;
+  color: #fff;
+  line-height: 42px;
+}
+.teach-image {
+  position: relative;
+  margin-top: 100px;
+  height: 673px;
+}
+.teach-image img {
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+.imgs-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.imgs-box .image {
+  flex: 1;
+  height: 300px;
+}
+/* artworks style start */
+.title {
+  text-align: center;
+  padding: 120px 0 80px;
+  font-family: 'maldives';
+  color: #fff;
+  font-size: 40px;
+}
+.artworks-swiper.swiper-container {
+  width: 100%;
+  padding: 2% 0;
+}
+.artworks-swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+}
+.artworks-swiper .swiper-slide-active,
+.artworks-swiper .swiper-slide-duplicate-active {
+  transform: scale(1.24);
+  z-index: 2;
+}
+.artworks-swiper .swiper-button-next,
+.artworks-swiper .swiper-button-prev {
+  color: #a9ecfd;
+}
+.artworks-swiper video {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+}
+.artworks-desc {
+  padding-top: 2%;
+}
+.artworks-desc p {
+  padding-top: 40px;
+  color: #fff;
+}
+.artworks-desc p:nth-of-type(1) {
+  text-align: center;
+  font-size: 30px;
+}
+.artworks-desc p:nth-of-type(2) {
+  font-size: 24px;
+  line-height: 42px;
+}
+/* artworks style end */
+
+/* interact style start */
+.interact-pre {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+.interact-desc {
+  padding-top: 80px;
+}
+.interact-desc p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 42px;
+}
+.interact-desc-center {
+  text-align: center;
+}
+.interact-box {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cup {
+  width: 500px;
+  height: 500px;
+}
+.bar {
+  position: relative;
+  z-index: 2;
+  height: 420px;
+  margin-left: -40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-left: 2px solid #fff;
+}
+.bar .item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bar .item span {
+  display: block;
+  color: #a9ecfd;
+  font-size: 14px;
+}
+.bar .item span:nth-of-type(1) {
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+}
+.bar .item span:nth-of-type(2) {
+  margin: 0 10px;
+  width: 40px;
+}
+/* interact style end */
+/* play style start */
+.play-desc {
+  padding-top: 2%;
+  font-size: 18px;
+  color: #fff;
+  line-height: 32px;
+}
+.song .w1200 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.song button {
+  padding: 10px 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.make-song {
+  display: none;
+}
+.make-song .w1200 {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.make-song button {
+  padding: 12px 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.make-song img:nth-of-type(2) {
+  width: 40%;
+}
+.teach-song {
+  padding-top: 2%;
+}
+.teach-song .teach-song-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.teach-song .item {
+  flex: 0 0 14%;
+  text-align: center;
+}
+.teach-song .item img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.teach-song .item.active img {
+  transform: scale(1.8);
+}
+.teach-song .item p {
+  color: #fff;
+  font-size: 20px;
+}
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+}
+.modal {
+  display: none;
+  width: 600px;
+  height: 366px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+.modal img {
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.modal video {
+  margin-top: 34px;
+  width: 100%;
+  height: 326px;
+}
+/* play style end */
+
+/* about us style start */
+.about-us-title {
+  font-size: 30px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+.about-us-title a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+}
+.about-us-title a:hover {
+  color: #a9ecfd;
+}
+.about-us-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #fff;
+}
+.about-us-info p {
+  font-size: 24px;
+  margin-top: 16px;
+}
+.about-us-info .contact {
+  display: flex;
+  align-items: center;
+}
+.about-us-info .contact a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+.about-us-info .contact a:nth-of-type(1) {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us-info .contact img {
+  width: 100%;
+}
+.about-us-info .contact a:nth-of-type(1) img {
+  width: 20px;
+}
+/* about us style end */
+#demo h6 {
+  font-size: 50px;
+  color: #fff;
+}
